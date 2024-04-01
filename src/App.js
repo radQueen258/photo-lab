@@ -28,16 +28,19 @@ import DeafaultTemplate from "./components/templates/DeafaultTemplate";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import InfoPage from "./pages/InfoPage";
+import './App.css'
 
 const App = () => {
   return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<DeafaultTemplate><HomePage /></DeafaultTemplate>} />
-          <Route path="/projects" element={<DeafaultTemplate><ProjectsPage /></DeafaultTemplate>} />
-          <Route path="/info" element={<DeafaultTemplate><InfoPage /></DeafaultTemplate>} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+          <div className="app">
+              <Routes>
+                  <Route path="/" element={<DeafaultTemplate><HomePage /></DeafaultTemplate>} />
+                  <Route path="/projects" element={<DeafaultTemplate><ProjectsPage /></DeafaultTemplate>} />
+                  <Route path="/info" element={<DeafaultTemplate><InfoPage /></DeafaultTemplate>} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+          </div>
       </BrowserRouter>
   );
 };

@@ -4,9 +4,11 @@ import Footer from "../atoms/Footer";
 
 const DeafaultTemplate = ({ children }) => {
     return (
-        <div>
+        <div className="defaultTemplate">
             <Header />
-            <main>{children}</main>
+            <div className="contentContainer">
+                {children}
+            </div>
             <Footer />
         </div>
     );
