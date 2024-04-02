@@ -9,19 +9,10 @@ const Header = () => {
                     <Typography variant="h6" component={Link} to="/"  className={styles.title}>
                         Photo Lab
                     </Typography>
-                    <Button component={Link} to="/projects" color="inherit">Projects</Button>
+                    <Button component={Link} to="/photos" color="inherit">Photos</Button>
                     <Button component={Link} to="/info" color="inherit">Info</Button>
                 </Toolbar>
         </AppBar>
-        // <header>
-        //     <nav>
-        //         <ul>
-        //             <li><Link to="/">Home</Link></li>
-        //             <li><Link to="/projects">Projects</Link></li>
-        //             <li><Link to="/info">Info</Link></li>
-        //         </ul>
-        //     </nav>
-        // </header>
     );
 };
 

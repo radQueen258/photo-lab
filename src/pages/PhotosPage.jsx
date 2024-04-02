@@ -1,12 +1,12 @@
 import React from "react";
 
-const ProjectsPage = () => {
+const PhotosPage = () => {
     return (
         <div>
             <h1>Photos Page</h1>
-            <p>View our Projects here</p>
+            <p>View your photos here</p>
         </div>
     );
 };
 
-export default ProjectsPage;
+export default PhotosPage;

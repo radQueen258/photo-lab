@@ -9,9 +9,6 @@ const Footer = () => {
             Footer content here
         </Typography>
         </footer>
-        // <footer>
-        //     <p>Footer content here</p>
-        // </footer>
     );
 };
 
